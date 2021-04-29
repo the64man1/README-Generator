@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/the64man1/README-Generator#readme",
   "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
     "inquirer": "^8.0.0"
   }
 }
