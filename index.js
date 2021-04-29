@@ -30,10 +30,10 @@ ${badge}
 
 ## Description
     
-${answer.motivation}
-${answer.why}
-${answer.problem}
-${answer.learn}
+${answer.motivation}\n\n
+${answer.why}\n\n
+${answer.problem}\n\n
+${answer.learn}\n\n
     
 ## Table of Contents
     
