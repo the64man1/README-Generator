@@ -5,7 +5,7 @@ const fs = require("fs");
 var badge = '';
 
 function getBadge (answer) {
-    if (answer.license == 'MIT') {
+    if (answer.license == 'GNU') {
         return badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
     } else if (answer.license == 'MIT') {
         return badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
