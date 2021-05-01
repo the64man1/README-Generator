@@ -28,7 +28,7 @@ In completing this project, I learned how to use the inquirer package for genera
     
 ## Installation
     
-To use the README generator, clone the repository by running “git clone git@github.com:the64man1/README-Generator.git” on your console. Then install inquirer and fs npm packages by running “npm install” in the folder where you cloned the repo files
+To use the README generator, clone the repository by running “git clone `git@github.com:the64man1/README-Generator.git`” on your console. Then install inquirer and fs npm packages by running “npm install” in the folder where you cloned the repo files
     
 ## Usage
     
