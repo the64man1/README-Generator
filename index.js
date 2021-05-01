@@ -1,4 +1,3 @@
-
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -15,14 +14,6 @@ function getBadge (answer) {
         return badge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
     };
 };
-
-/* const badge = function (answer) {
-    const license = answer.license;
-    return license == 'GNU' ? '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
-        :  license == 'MIT' ? '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-        :  license == 'Mozilla' ? '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-        :  license == 'Unilicense' ? '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
-}; */
 
 const writeReadme = (answer, badge) => `
 # ${answer.title}
@@ -54,7 +45,7 @@ ${answer.usage}
     
 ## License
     
-${answer.license}
+This project is distrubuted under the ${answer.license} License. See more information through this link: ${badge}
     
 ## Contributing
     
@@ -135,11 +126,5 @@ inquirer.prompt([
     getBadge(answer);
     const readMeContent = writeReadme(answer, badge);
 
-    fs.writeFile('README.md', readMeContent, (err) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("README generated")
-        }
-    });
+    fs.writeFile('README.md', readMeContent, (err) => err ? console.log(err) : console.log("README generated"));
 });
