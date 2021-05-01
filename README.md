@@ -34,7 +34,7 @@ To use the README generator, clone the repository by running “git clone git@gi
     
 Users are free to use this project to generate README markdown files for their own GitHub repositories
 
-Video tutorial: README Generator Video Tutorial.mov
+Video tutorial: https://youtu.be/wgh6remHcQ8
     
 ## License
     
